@@ -10,13 +10,13 @@ Gem::Specification.new do |gem|
   gem.email = "michael@intridea.com"
   gem.homepage = "http://github.com/intridea/omniauth"
   gem.authors = ["Michael Bleigh"]
-  
+
   gem.files = Dir.glob("{lib}/**/*") + %w(README.rdoc LICENSE.rdoc CHANGELOG.rdoc)
-  
+
   gem.add_dependency  'oa-core',      version
-  gem.add_dependency  'rest-client',  '~> 1.5.1'
+  gem.add_dependency  'rest-client',  '~> 1.5'
   gem.add_dependency  'multi_json',   '~> 0.0.2'
-  gem.add_dependency  'nokogiri',     '~> 1.4.2'
-  
+  gem.add_dependency  'nokogiri',     '~> 1.4'
+
   eval File.read(File.join(File.dirname(__FILE__), '../development_dependencies.rb'))
 end
